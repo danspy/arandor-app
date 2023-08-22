@@ -16,10 +16,10 @@ if($items and $items->isNotEmpty()):
 
   <?php foreach($items as $item): ?>
     
-    <a href="<?= $item->url() ?>" class="relative bg-slate-600">
+    <a href="<?= $item->url() ?>" class="relative bg-black aspect-square">
       <?php if($item->images()->isNotEmpty()): ?>
         <?php foreach($item->images() as $file): ?>
-            <?= $file->crop(500) ?>
+            <?= $file->crop(800) ?>
         <?php endforeach ?>
       <?php endif ?>
 

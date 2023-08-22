@@ -8,16 +8,17 @@ if($items->isNotEmpty()):
 
 ?>
 
-<div class="flex flex-row items-center h-20 gap-4 bg-black">
-  <div class="logo">
+<div class="sticky top-0 z-10 flex flex-row items-center justify-between h-20 gap-4 bg-black">
+  <a class="block logo" href="<?= $site->url() ?>">
     <img src="<?= url('assets/arandor.png') ?>" class="w-20">
-  </div>
+  </a>
   <nav class="menu">
-    <ul class="flex flex-row gap-4">
+    <ul class="flex-row hidden gap-4 mr-6 lg:flex lg:mr-12">
       <?php foreach($items as $item): ?>
       <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
       <?php endforeach ?>
     </ul>
+    <?php snippet('mobilemenu') ?>
   </nav>
 </div>
 

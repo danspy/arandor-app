@@ -16,3 +16,5 @@ columns:
       pages:
         type: pages
         template: character
+      files:
+        type: files

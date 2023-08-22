@@ -1,9 +1,8 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
+<?php snippet('hero') ?>
 
-<div class="max-w-[1020px] w-full my-12 mx-auto px-8 flex flex-row">
-  <?php snippet('sidemenu') ?>
-
+<div class="max-w-[1920px] w-full my-6 lg:my-12 mx-auto px-8 flex flex-row">
   <div class="content">
     <h1 class="text-[30px]"><?= $page->title() ?></h1>
     <?= $page->text()->kirbytext() ?>

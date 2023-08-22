@@ -2,7 +2,11 @@ Title: Home
 
 ----
 
-Text: Lorem Ipsum
+Text:
+
+Arandor ist ein D&D 5E Abenteuer. Geschrieben von Flo. Gespielt von Daniel, Cons und David. Ihr seid die besten.
+
+(link: https://arandor.info/ text: Arandor.info)
 
 ----
 
