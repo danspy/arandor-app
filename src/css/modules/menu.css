@@ -1,0 +1,11 @@
+.menu, .sidebar {
+  a.active {
+    @apply underline;
+  }
+}
+
+.sidebar {
+  a {
+    @apply py-2 px-6 block hover:bg-slate-950 transition-colors;
+  }
+}

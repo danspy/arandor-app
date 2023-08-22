@@ -1,0 +1,47 @@
+Title: Sinatah
+
+----
+
+Text:
+
+**Familienname**: Liadon
+**Alter**: 130
+**Größe**: 1,80m
+**Gewicht**: 50kg
+**Waffen**: Dolch + Langbogen
+**Rüstung**: Leder (leicht)
+**Werkzeuge**: - 
+**Pferd**: White Shadow 
+**Sprache**: Gemeine Sprache, Elfisch, Drakonisch
+
+Aufgewachsen in einem idyllischen Walddorf, mit knapp 60 Jahren auf ersten Abenteuern gewesen und so ihre Familie zurückgelassen. Als sie 20 Jahre später wieder in das Dorf zurückkehrte, war alles ausgestorben, verbrannte Leichen, abgebrannte Bäume und kein Anzeichen von Leben. Getrieben durch Schuldgefühle und aufkeimende Dunkelheit schloss Sie einen Pakt mit einem Unhold, wodurch Ihre magische Begabung als Hexenmeisterin zum Vorschein kam und Sie seitdem auf der Suche nach ihrer Familie und überlebenden Ihres Dorfes ist.
+
+**Berufe**: Ledergerberin, Holzverarbeitung
+
+**Charakter**: auf den ersten Blick wirkt sie durch ihre traumatische Vergangenheit eher verschlossen und unzulänglich. Wenn man sie aber davon überzeugt hat, ehrenhafte Absichten zu haben, bzw durch Taten überzeugt, ist sie sehr loyal. Ansonsten recht still und Beobachtend. Darüber hinaus ist sie sehr Naturverbunden.
+
+**Ziel**: Herauszufinden, wer ihr Dorf überfallen/ausgelöscht hat und ob ihre Familie noch lebt. In den Ruinen der Stadt konnte sie keinerlei anzeichen von ihrem verbleib finden. 
+
+**Geheimnisse**: Sie besitzt ein altertümliches Buch, welches Sie auf Ihren Reisen durch den westlichen Kontinent gefunden hat. Nachdem Sie sich ausgiebiger mit diesem Buch befasst hat, “sprach” das Buch eines Tages zu ihr, indem eine mysteriöse verschnörkelte Schrift in dem Buch auftauchte. Es stellte sich heraus, dass in dem Buch eine alte Seele eines Unholds steckt und ihr große Mächte versprach sie auf der Suche nach ihren Eltern zu helfen. 
+
+(D&D Beyond Character-Sheet)[https://ddb.ac/characters/88666715/zqy9a1]
+
+**Stammbaum**
+
+Familie Liadon
+
+**Mutter**
+Name: Ielenia
+Alter: 461
+
+**Vater**
+Name: Berrian
+Alter: 534
+
+**Bruder**
+Name: Aelar
+Alter: 90
+
+----
+
+Uuid: UHuXsUaEejEhXJIK
