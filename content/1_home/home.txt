@@ -2,11 +2,27 @@ Title: Home
 
 ----
 
+Levelprogress: 15
+
+----
+
+Currentlevel: 6
+
+----
+
+Nextlevel: 7
+
+----
+
 Text:
 
 Arandor ist ein D&D 5E Abenteuer. Geschrieben von Flo. Gespielt von Daniel, Cons und David. Ihr seid die besten.
 
 (link: https://arandor.info/ text: Arandor.info)
+
+----
+
+Nextprogress: 7
 
 ----
 

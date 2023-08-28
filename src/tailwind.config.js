@@ -5,7 +5,16 @@ export default {
     '../site/**/*.{php,html,js}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+      },
+      fontFamily: {
+        'cormorant': ['Cormorant Unicase', 'serif'],
+        'lustria': ['Lustria', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

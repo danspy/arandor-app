@@ -8,7 +8,7 @@ if($items->isNotEmpty()):
 
 ?>
 
-<div x-data="{ openMobileeMenu: false }" class="mr-6 lg:hidden">
+<div x-data="{ openMobileeMenu: false }" class="mr-8 lg:hidden">
     <button @click="openMobileeMenu = true" class="flex flex-row items-center gap-2 text-white">
         Menu
     </button>

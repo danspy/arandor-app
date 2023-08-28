@@ -1,0 +1,12 @@
+#progressLevel {
+  &::-webkit-progress-bar {
+    background-color: #101010; /* Background color of the progress bar */
+  }
+  &::-webkit-progress-value {
+    @apply bg-yellow-500; /* Color of the filled progress */
+  }
+
+  &::-moz-progress-bar {
+    @apply bg-yellow-500; /* Color of the filled progress for Firefox */
+  }
+}

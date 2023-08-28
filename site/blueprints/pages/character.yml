@@ -10,6 +10,9 @@ columns:
           text:
             type: textarea
             size: huge
+          characterId:
+            label: Character ID
+            type: text
   sidebar:
     width: 1/3
     sections:

@@ -1,44 +1,12 @@
-Title: Sinatah
+Title: Sinatah Liadon
 
 ----
 
-Text:
+Text: (link: https://ddb.ac/characters/88666715/zqy9a1 text: D&D Beyond Character-Sheet)
 
-**Familienname**: Liadon
-**Alter**: 130
-**Größe**: 1,80m
-**Gewicht**: 50kg
-**Waffen**: Dolch + Langbogen
-**Rüstung**: Leder (leicht)
-**Werkzeuge**: - 
-**Pferd**: White Shadow 
-**Sprache**: Gemeine Sprache, Elfisch, Drakonisch
+----
 
-Aufgewachsen in einem idyllischen Walddorf, mit knapp 60 Jahren auf ersten Abenteuern gewesen und so ihre Familie zurückgelassen. Als sie 20 Jahre später wieder in das Dorf zurückkehrte, war alles ausgestorben, verbrannte Leichen, abgebrannte Bäume und kein Anzeichen von Leben. Getrieben durch Schuldgefühle und aufkeimende Dunkelheit schloss Sie einen Pakt mit einem Unhold, wodurch Ihre magische Begabung als Hexenmeisterin zum Vorschein kam und Sie seitdem auf der Suche nach ihrer Familie und überlebenden Ihres Dorfes ist.
-
-**Berufe**: Ledergerberin, Holzverarbeitung
-
-**Charakter**: auf den ersten Blick wirkt sie durch ihre traumatische Vergangenheit eher verschlossen und unzulänglich. Wenn man sie aber davon überzeugt hat, ehrenhafte Absichten zu haben, bzw durch Taten überzeugt, ist sie sehr loyal. Ansonsten recht still und Beobachtend. Darüber hinaus ist sie sehr Naturverbunden.
-
-**Ziel**: Herauszufinden, wer ihr Dorf überfallen/ausgelöscht hat und ob ihre Familie noch lebt. In den Ruinen der Stadt konnte sie keinerlei anzeichen von ihrem verbleib finden. 
-
-(link: https://ddb.ac/characters/88666715/zqy9a1 text: D&D Beyond Character-Sheet)
-
-**Stammbaum**
-
-Familie Liadon
-
-**Mutter**
-Name: Ielenia
-Alter: 461
-
-**Vater**
-Name: Berrian
-Alter: 534
-
-**Bruder**
-Name: Aelar
-Alter: 90
+Characterid: 88666715
 
 ----
 
