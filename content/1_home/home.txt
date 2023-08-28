@@ -84,7 +84,7 @@ Accordion:
   queststatusselect: check-circle-2
   content: lorem ipsum...
 - 
-  title: An die Arbeit mit Mandy
+  title: An die Arbeit mit Mando
   questcontent: >
     Mando Eichenschild, der Kommandant der
     Truppen von Mardunien, benötigt eure
