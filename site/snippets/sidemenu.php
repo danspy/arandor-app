@@ -30,7 +30,7 @@ if($items and $items->isNotEmpty()):
 
 <!-- MOBILE -->
 <div class="sticky z-[1] flex-grow w-full bg-black sidebar top-20 lg:hidden" x-data="{ openSubMenu: false }">
-  <button @click="openSubMenu = ! openSubMenu" class="block w-full p-4">
+  <button @click="openSubMenu = ! openSubMenu" class="flex items-start w-full px-6 py-4 border-t-2 border-t-slate-900">
     <span class="inline-flex items-center">
       <i class="mr-2" data-lucide="user-square-2"></i>Character-Menu
     </span>

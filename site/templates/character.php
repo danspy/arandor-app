@@ -61,7 +61,7 @@
     
           <template x-if="!loading && character">
             <div>
-              <div class="grid grid-cols-1 gap-4 mb-12 md:grid-cols-2 lg:grid-cols-4">
+              <div class="grid grid-cols-1 gap-2 mb-12 md:gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <div class="flex items-center justify-between px-4 py-1 bg-slate-950"><strong>Gender:</strong> <span x-text="character.data.gender"></span></div>
                 <div class="flex items-center justify-between px-4 py-1 bg-slate-950"><strong>Age:</strong> <span x-text="character.data.age"></span></div>
                 <div class="flex items-center justify-between px-4 py-1 bg-slate-950"><strong>Race:</strong> <span x-text="character.data.race.fullName"></span></div>

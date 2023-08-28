@@ -7,18 +7,138 @@ columns:
       fields:
         type: fields
         fields:
+          levelSettings:
+            label: Level
+            type: headline
           levelProgress:
             label: Level Progress
+            width: 1/3
             type: text
           currentLevel:
             label: Level Current
+            width: 1/3
             type: text
           nextLevel:
             label: Level Next
+            width: 1/3
             type: text
+          arandorFractions:
+            label: Arandor Fraktionen
+            type: headline
+          rulikSelect:
+            label: Rulik
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          rulikProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          irilethSelect:
+            label: Irileth
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          irilethProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          mardunienSelect:
+            label: Mardunien
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          mardunienProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          moleaFractions:
+            label: Molea Fraktionen
+            type: headline
+          sianischelandeSelect:
+            label: Sianische Lande
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          sianischelandeProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          regusanienSelect:
+            label: Regusanien
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          regusanienProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          kongdonienSelect:
+            label: Kongdonien
+            width: 1/2
+            type: select
+            options:
+              enemy: Feindlich
+              suspicious: Suspekt
+              neutral: Neutral
+              friendly: Freundlich
+              respectful: Respektvoll
+          kongdonienProgress:
+            label: Progress
+            width: 1/2
+            type: text
+          introText:
+            label: Intro
+            type: headline
           text:
             type: textarea
             size: huge
+          questsAccordion:
+            label: Quests
+            type: headline
+          accordion:
+            label: Quest Items
+            type: structure
+            fields:
+              title:
+                label: Title
+                type: text
+              questcontent:
+                label: Content
+                type: text
+              questStatusSelect:
+                label: Status
+                type: select
+                options:
+                  clipboard-list: Offen
+                  timer: Laufend
+                  calendar-clock: Bald
+                  check-circle-2: Erledigt
   sidebar:
     width: 1/3
     sections:
@@ -27,4 +147,3 @@ columns:
         template: default
       files:
         type: files
-

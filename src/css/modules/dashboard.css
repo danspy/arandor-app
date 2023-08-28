@@ -1,12 +1,28 @@
 #progressLevel {
   &::-webkit-progress-bar {
-    background-color: #101010; /* Background color of the progress bar */
+    background-color: #101010;
   }
   &::-webkit-progress-value {
-    @apply bg-yellow-500; /* Color of the filled progress */
+    @apply bg-yellow-500;
+  }
+
+  &.enemy::-webkit-progress-value {
+    @apply bg-red-900;
+  }
+  &.suspicious::-webkit-progress-value {
+    @apply bg-red-500;
+  }
+  &.neutral::-webkit-progress-value {
+    @apply bg-yellow-600;
+  }
+  &.friendly::-webkit-progress-value {
+    @apply bg-green-600;
+  }
+  &.respectful::-webkit-progress-value {
+    @apply bg-blue-700;
   }
 
   &::-moz-progress-bar {
-    @apply bg-yellow-500; /* Color of the filled progress for Firefox */
+    @apply bg-yellow-500;
   }
 }

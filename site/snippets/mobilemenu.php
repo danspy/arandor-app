@@ -8,7 +8,7 @@ if($items->isNotEmpty()):
 
 ?>
 
-<div x-data="{ openMobileeMenu: false }" class="mr-8 lg:hidden">
+<div x-data="{ openMobileeMenu: false }" class="mr-6 md:mr-8 lg:hidden">
     <button @click="openMobileeMenu = true" class="flex flex-row items-center gap-2 text-white">
       <i data-lucide="menu"></i>
     </button>
@@ -19,13 +19,13 @@ if($items->isNotEmpty()):
         x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"
         class="fixed inset-0 z-20 overflow-y-auto">
         <div @click.away="openMobileeMenu = false" class="text-white bg-black sidebar-flyout">
-            <header class="p-6 shadow-light">
-                <button @click="openMobileeMenu = false" class="flex flex-row items-center">
+            <header class="px-6 border-b-2 shadow-light border-b-slate-900">
+                <button @click="openMobileeMenu = false" class="flex flex-row items-center h-20">
                     <span class="inline-flex items-center"><i class="mr-2" data-lucide="chevron-left"></i> Schließen</span>
                 </button>
             </header>
 
-            <nav class="py-6 mobile-menu">
+            <nav class="pb-6 mobile-menu">
                 <f:if condition="{mainNavigationMenu}">
                     <ul>
                       <?php foreach($items as $item): ?>

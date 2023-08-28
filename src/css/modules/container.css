@@ -17,3 +17,22 @@
 .character-hero {
   filter: blur(20px);
 }
+
+.accordion-item + .accordion-item {
+  @apply mt-3;
+}
+
+.status {
+  &.clipboard-list {
+    @apply text-slate-500;
+  }
+  &.timer {
+    @apply text-yellow-500;
+  }
+  &.calendar-clock {
+    @apply text-blue-400;
+  }
+  &.check-circle-2 {
+    @apply text-green-600;
+  }
+}

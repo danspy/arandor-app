@@ -1,0 +1,41 @@
+{
+  "name": "owebstudio/kirby-pwa",
+  "description": "Turns your project into a PWA (progressive web app) for Kirby 3.",
+  "type": "kirby-plugin",
+  "version": "1.0.2",
+  "license": "MIT",
+  "keywords": [
+    "owebstudio",
+    "owebstudio-plugin",
+    "kirby",
+    "kirby-3",
+    "kirby3-plugin",
+    "kirby-plugin",
+    "kirby-pwa",
+    "pwa",
+    "progressive-web-app"
+  ],
+  "homepage": "https://owebstudio.com",
+  "support": {
+    "email": "support@owebstudio.com"
+  },
+  "authors": [
+    {
+      "name": "oweb studio",
+      "email": "contact@owebstudio.com",
+      "homepage": "https://owebstudio.com"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "getkirby/composer-installer": "^1.2"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
+
