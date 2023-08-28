@@ -1005,6 +1005,11 @@ p + p{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
+@media (min-width: 640px){
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (min-width: 768px){
   .md\:ml-8{
     margin-left: 2rem;
@@ -1062,6 +1067,9 @@ p + p{
   .lg\:mt-12{
     margin-top: 3rem;
   }
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
   .lg\:block{
     display: block;
   }
@@ -1089,6 +1097,9 @@ p + p{
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1110,5 +1121,36 @@ p + p{
   }
   .lg\:text-\[38px\]{
     font-size: 38px;
+  }
+}
+@media (min-width: 1280px){
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .xl\:gap-12{
+    gap: 3rem;
+  }
+}
+@media (min-width: 1536px){
+  .\32xl\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+  .\32xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+  .\32xl\:mt-0{
+    margin-top: 0px;
+  }
+  .\32xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .\32xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .\32xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .\32xl\:gap-12{
+    gap: 3rem;
   }
 }
