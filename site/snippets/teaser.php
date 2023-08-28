@@ -18,7 +18,7 @@ if ($parentPage) {
                       this.character = JSON.parse(localStorageData);
                       this.loading = false;
                   } else {
-                      const proxyUrl = '../proxy.php?characterId=' + this.characterId;
+                      const proxyUrl = './proxy.php?characterId=' + this.characterId;
                       const response = await fetch(proxyUrl);
                       const data = await response.json();
                       this.character = data;

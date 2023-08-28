@@ -10,7 +10,7 @@ if($items->isNotEmpty()):
 
 <div x-data="{ openMobileeMenu: false }" class="mr-8 lg:hidden">
     <button @click="openMobileeMenu = true" class="flex flex-row items-center gap-2 text-white">
-        Menu
+      <i data-lucide="menu"></i>
     </button>
     
     <div x-show="openMobileeMenu" x-transition:enter="transition-transform transition-duration-300 ease-out"
@@ -21,11 +21,11 @@ if($items->isNotEmpty()):
         <div @click.away="openMobileeMenu = false" class="text-white bg-black sidebar-flyout">
             <header class="p-6 shadow-light">
                 <button @click="openMobileeMenu = false" class="flex flex-row items-center">
-                    <span class="inline-block">Schließen</span>
+                    <span class="inline-flex items-center"><i class="mr-2" data-lucide="chevron-left"></i> Schließen</span>
                 </button>
             </header>
 
-            <nav class="p-6 mobile-menu">
+            <nav class="py-6 mobile-menu">
                 <f:if condition="{mainNavigationMenu}">
                     <ul>
                       <?php foreach($items as $item): ?>

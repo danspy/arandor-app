@@ -14,7 +14,7 @@ if($items->isNotEmpty()):
     <div class="text-yellow-500 font-cormorant text-[38px]">Arandor</div>
   </a>
   <nav class="menu">
-    <ul class="flex-row hidden gap-4 mr-8 lg:flex">
+    <ul class="flex-row hidden mr-8 lg:flex">
       <?php foreach($items as $item): ?>
       <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
       <?php endforeach ?>

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:watch": "vite build --watch --mode=development && yarn tcv",
+    "build:watch": "vite build --watch --emptyOutDir --mode=development && yarn tcv",
     "build": "vite build",
     "cleanup": "rm -rf node_modules/.cache",
     "tcv": "tailwind-config-viewer -p 3100"
@@ -17,6 +17,7 @@
   "dependencies": {
     "alpinejs": "^3.12.3",
     "autoprefixer": "^10.4.15",
+    "lucide": "^0.269.0",
     "postcss": "^8.4.28",
     "postcss-import-ext-glob": "^2.1.1",
     "postcss-nesting": "^11.1.0",

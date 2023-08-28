@@ -1,6 +1,20 @@
 .menu {
   a.active {
-    @apply underline;
+    @apply h-20 bg-gray-900;
+  }
+
+  a {
+    @apply h-20 px-3 hover:bg-yellow-400 hover:text-black transition-colors flex items-center justify-center;
+  }
+}
+
+.mobile-menu {
+  a.active {
+    @apply bg-gray-900 h-auto;
+  }
+
+  a {
+    @apply h-auto py-2 px-6 block hover:bg-yellow-400 hover:text-black transition-colors;
   }
 }
 
