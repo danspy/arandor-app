@@ -1,5 +1,4 @@
 <?php
-
 $items = false;
 
 // get the open item on the first level
@@ -32,7 +31,12 @@ if($items and $items->isNotEmpty()):
 <div class="sticky z-[1] flex-grow w-full bg-black sidebar top-20 lg:hidden" x-data="{ openSubMenu: false }">
   <button @click="openSubMenu = ! openSubMenu" class="flex items-start w-full px-6 py-4 border-t-2 border-t-slate-900">
     <span class="inline-flex items-center">
-      <i class="mr-2" data-lucide="list"></i>Sub-Menu
+      <i class="mr-2" data-lucide="list"></i>
+      <?php if (isset($submenuTitle)) {
+        echo $submenuTitle;
+      } else {
+        echo "Sub-Menu";
+      } ?>
     </span>
   </button>
 

@@ -2,7 +2,7 @@
 <?php snippet('menu') ?>
 
 <div class="relative flex flex-col w-full lg:flex-row" >
-  <?php snippet('sidemenu') ?>
+  <?php snippet('sidemenu', ['submenuTitle' => 'Characters']) ?>
 
   <div class="w-full mb-12 content lg:mb-0">
 
