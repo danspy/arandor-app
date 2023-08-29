@@ -1,0 +1,23 @@
+Title: Episode 1
+
+----
+
+Subheadline: Ein Aufbruch ins Unbekannte
+
+----
+
+Text:
+
+Unsere Reise beginnt in der gemütlichen Taverne "Zum Staubigen Krug", einem Ort, an dem Schicksale miteinander verflochten werden. Hier kreuzen sich die Wege von drei unterschiedlichen Helden: Alvar dem Halbling, Sinatah, der Waldelfe und Belmont, dem tapferen halbelfen Paladin. Diese ungleichen Gefährten begegnen sich inmitten des pulsierenden Lebens der Taverne, während der Gastwirt Ruppert und sein treuer Knecht Thorben von einem aufkommenden Goblinproblem erzählen, das die Einwohner von Frostheim bedroht.
+
+Doch bald tritt ein verletzter Freund von Thorben, Kimbal, in die Taverne. Seine mühsame Ankunft und seine von den Kämpfen gezeichnete Erscheinung erregen Aufsehen. Die Helden setzen sich mit ihm zusammen und lauschen seinen Worten, als er die beängstigenden Einzelheiten seiner Konfrontation mit den Goblins schildert. Währenddessen schließt Alvar Bekanntschaft mit einer Gruppe einheimischer Halblinge, die als saisonale Arbeiter in Frostheim ihren Lebensunterhalt bestreiten.
+
+Die Entscheidung fällt, der Gemeinschaft zu helfen und sich mutig auf die Suche nach der gefährlichen Goblinbande zu begeben. Um sich auf die Aufgabe vorzubereiten, begeben sich die Helden zu Hermine, der resoluten Anführerin der Waldgemeinschaft. Ihre Augen glitzern vor Entschlossenheit, als sie den Helden verspricht, großzügige Belohnungen zu gewähren, sollten sie es schaffen, das Goblinproblem zu beseitigen.
+
+Nach einer kurzen, aber notwendigen Ruhepause brechen die Helden schließlich auf und wagen sich ins Hügelland. Ihre Schritte führen sie über die Brücke am Eingang von Frostheim, doch bald stolpern sie über einen verletzten, älteren Mann, der in einen tiefbraunen Umhang gehüllt ist. Die Geschichte, die er ihnen mit müden Stimme erzählt, erzählt von einem brutalen Goblinüberfall. Empathisch kümmern sich die Helden um den Verwundeten und geleiten ihn sicher durch die Stadttore von Frostheim.
+
+Voller Entschlossenheit setzen die tapferen Gefährten ihre Reise fort, als der Wald sie empfängt. Ein kleiner, wilder Fluss öffnet sich vor ihnen, und die Brücke zum anderen Ufer ist zerstört. Jetzt stehen sie vor der Frage, wie sie diesen Fluss überqueren können. Die scharfen Augen von Sinatah erkennen auf der gegenüberliegenden Seite des Flusses einen einsamen Goblin, der möglicherweise noch mehr über die Gefahren dieser Region weiß.
+
+----
+
+Uuid: rgvdYspPQAW9IYSo

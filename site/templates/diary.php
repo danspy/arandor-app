@@ -7,8 +7,8 @@
     <h1 class="text-[38px] font-cormorant"><?= $page->title() ?></h1>
     <?= $page->text()->kirbytext() ?>
 
-    <div class="grid w-full grid-cols-1 gap-6 mt-6 mb-12 lg:mt-12 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-      <?php snippet('character-teaser', ['pageString' => 'characters']) ?>
+    <div class="grid w-full grid-cols-2 gap-2 mt-6 mb-12 sm:gap-6 lg:mt-12 sm:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-7">
+      <?php snippet('teaser', ['pageString' => 'diary']) ?>
     </div>
   </div>
 </div>

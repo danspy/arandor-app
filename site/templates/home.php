@@ -11,6 +11,10 @@
       <progress class="block w-full" id="progressLevel" value="<?= $page->levelprogress() ?>" max="100"></progress>
     </div>
 
+    <div class="mt-6 md:mt-12">
+      <?php snippet('latest-entry', ['pageString' => 'diary']) ?>
+    </div>
+
     <div class="grid grid-cols-1 gap-12 mt-6 mb-12 md:grid-cols-2 2xl:grid-cols-3 lg:mt-12">
       <div class="grid grid-cols-1 2xl:grid-cols-2 2xl:gap-12 2xl:col-span-2">
         <div>
@@ -52,7 +56,7 @@
       <div>
         <h2 class="text-[28px] font-cormorant mb-6">Characters</h2>
         <div class="grid grid-cols-1 gap-6 mb-12 sm:grid-cols-2">
-          <?php snippet('teaser', ['pageString' => 'characters']) ?>
+          <?php snippet('character-teaser', ['pageString' => 'characters']) ?>
         </div>
       </div>
     </div>

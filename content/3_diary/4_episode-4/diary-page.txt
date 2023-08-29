@@ -1,0 +1,27 @@
+Title: Episode 4
+
+----
+
+Subheadline: Probleme in Anvil
+
+----
+
+Text:
+
+Nach der Niederlage von Rekzak sitzen die Helden in der Taverne "Zum Staubigen Krug" und beraten leise über ihre nächsten Schritte. Einig sind sie sich, das Geheimnis um Kimbal vorerst zu hüten. Plötzlich fällt ihnen ein kräftiger Mann auf, der in der Schenke sitzt. Es ist Boldan Eisfaust, Kommandant der Stadtwache von Frostheim. Sein besorgter Gesichtsausdruck verrät Stress. Beim Verlassen des Krugs verliert er einen Brief.
+
+Die Helden nehmen den Brief an sich und erfahren, dass Oberhauptmann Mando Eichenschild aus Anvil alle benachbarten Kommandanten dringend um Verstärkung bittet. Die Stadt und der König sind in Gefahr, Handlungsbedarf besteht. Nach einem herzhaften Abendessen begeben sie sich zur Ruhe, um neue Kräfte für den bevorstehenden Tag zu sammeln.
+
+Der Morgen bricht an, die Helden starten in den Tag. Im erwachenden Gasthaus beschließt Barum, seine Hexenmeister-Kollegin Sinatah mit einem Feuerzauber zu necken. Alvar hingegen hat eine unruhige Nacht hinter sich. Sein schweres Herz ist mit einem furchtbaren Traum von einer von Schatten verschlungenen Insel belastet.
+
+Die Helden schließen sich Boldans Mission an und reiten auf seinem mächtigen Greifen in Richtung Silberfels, Roval Belmonts Heimat. Dort erreicht sie ein herzliches Wiedersehen mit seinem alten Schmiedemeister. Bald erfahren sie, dass sie nur noch einen kurzen Fußmarsch von Anvil entfernt sind.
+
+Unterwegs stoßen sie auf ein untotes Mädchen, das in ihrem Leid versucht, sie zu attackieren. Die Helden erkennen schnell, dass die Erlösung des Mädchens ihre Seele befreien würde. Nach der Befreiung setzen sie ihren Weg fort und nähern sich den Stadtmauern von Anvil.
+
+Dort beobachten sie entsetzt, wie eine verzweifelte Stadtwache von zwei Kultisten verfolgt und durch blutrote Chaosblitze vernichtet wird. Verletzt, aber entschlossen, besiegen die Helden die Kultisten und dringen tiefer in die Stadt vor. Mando Eichenschild empfängt sie und führt sie zu einer geheimen unterirdischen Kammer. Dort treffen sie auf einen riesigen Amboss und den König von Anvil.
+
+Der König, gestresst und besorgt, bespricht sich mit Mando. Die Helden werden gebeten, Teil eines Einsatztrupps zu werden, der auf den Sturmwrackinseln nach Runara sucht, einem Mitglied des uralten Magierzirkels.
+
+----
+
+Uuid: lcjKPVWwdJZq1sbD
