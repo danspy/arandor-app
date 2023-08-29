@@ -6,15 +6,18 @@ if ($parentPage) {
 
     foreach ($subpages as $subpage) { ?>
 
-        <a href="<?= $subpage->url() ?>" class="relative bg-black aspect-square"
+<a href="<?= $subpage->url() ?>" class="relative bg-black aspect-square"
         x-data="{
           characterId: '<?= $subpage->characterid() ?>',
           character: {},
           loading: true,
+          expiration: 600000, // 10 minutes in milliseconds
           async init() {
               try {
                   const localStorageData = localStorage.getItem('characterData<?= $subpage->characterid() ?>');
-                  if (localStorageData) {
+                  const expiration = localStorage.getItem('characterDataExpiration<?= $subpage->characterid() ?>');
+
+                  if (localStorageData && expiration && Date.now() < Number(expiration)) {
                       this.character = JSON.parse(localStorageData);
                       this.loading = false;
                   } else {
@@ -23,7 +26,10 @@ if ($parentPage) {
                       const data = await response.json();
                       this.character = data;
                       this.loading = false;
+
+                      const expirationTime = Date.now() + this.expiration;
                       localStorage.setItem('characterData<?= $subpage->characterid() ?>', JSON.stringify(data));
+                      localStorage.setItem('characterDataExpiration<?= $subpage->characterid() ?>', expirationTime);
                   }
               } catch (error) {
                   console.error('Error fetching data:', error);
