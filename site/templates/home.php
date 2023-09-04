@@ -55,7 +55,7 @@
       </div>
       <div>
         <h2 class="text-[28px] font-cormorant mb-6">Characters</h2>
-        <div class="grid grid-cols-1 gap-6 mb-12 sm:grid-cols-2">
+        <div class="grid w-full grid-cols-1 gap-6 mb-12 sm:grid-cols-2">
           <?php snippet('character-teaser', ['pageString' => 'characters']) ?>
         </div>
       </div>

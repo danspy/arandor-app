@@ -2,12 +2,12 @@
 <?php snippet('menu') ?>
 <?php snippet('hero') ?>
 
-<div class="max-w-[1920px] w-full my-6 lg:my-12 mx-auto px-6 md:px-8 flex flex-row">
+<div class="max-w-[1920px] w-full my-6 lg:my-12 mx-auto px-6 md:px-8 flex flex-row min-h-screen">
   <div class="w-full content">
     <h1 class="text-[38px] font-cormorant"><?= $page->title() ?></h1>
     <?= $page->text()->kirbytext() ?>
 
-    <div class="grid w-full grid-cols-2 gap-2 mt-6 mb-12 sm:gap-6 lg:mt-12 sm:grid-cols-3 lg:grid-cols-5 2xl:grid-cols-7">
+    <div class="grid w-full grid-cols-2 gap-2 mt-6 mb-12 sm:gap-6 lg:mt-12 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
       <?php snippet('teaser', ['pageString' => 'diary']) ?>
     </div>
   </div>
