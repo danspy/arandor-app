@@ -19,6 +19,6 @@ jobs:
           SUBFOLDER="/home/instudio/html/dev/arandor-app"
           
           # Deploy using rsync
-          rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SSH_USER@$SSH_HOST:$SUBFOLDER
+          ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SUBFOLDER"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
