@@ -12,12 +12,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to Uberspace
-        run: |
-          SSH_USER="instudio"
-          SSH_HOST="vanness.uberspace.de"
-          SUBFOLDER="/home/instudio/html/dev/arandor-app"
-          
-          # Deploy using rsync
-          rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SSH_USER@$SSH_HOST:$SUBFOLDER
+        run: rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ instudio@vanness.uberspace.de:/home/instudio/html/dev/test
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
