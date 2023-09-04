@@ -16,9 +16,9 @@ jobs:
         run: |
           SSH_USER="instudio"
           SSH_HOST="vanness.uberspace.de"
-          SUBFOLDER="/dev/arandor-app"
+          SUBFOLDER="/var/www/virtual/instudio/html/dev/arandor-app"
           
           # Deploy using rsync
           rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SSH_USER@$SSH_HOST:$SUBFOLDER
         env:
-          SSH_PRIVATE_KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICPmFlSLmz6C8iohY8ZM1cge0pHHlA+rx0GJN5fs4kdj danspy0212@googlemail.com
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
