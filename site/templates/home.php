@@ -2,6 +2,8 @@
 <?php snippet('menu') ?>
 <?php snippet('hero') ?>
 
+<!-- test -->
+
 <div class="max-w-[1920px] w-full my-6 lg:my-12 mx-auto px-6 md:px-8 flex flex-row">
   <div class="content">
     <h2 class="text-[28px] font-cormorant mb-6">Willkommen in Arandor</h2>
