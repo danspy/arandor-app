@@ -16,7 +16,7 @@ jobs:
         run: |
           SSH_USER="instudio"
           SSH_HOST="vanness.uberspace.de"
-          SUBFOLDER="/var/www/virtual/instudio/html/dev/arandor-app"
+          SUBFOLDER="/home/instudio/html/dev/arandor-app"
           
           # Deploy using rsync
           rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SSH_USER@$SSH_HOST:$SUBFOLDER
