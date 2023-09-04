@@ -8,13 +8,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: rsync deployments
-        uses: burnett01/rsync-deployments@4.1
-        with:
-          switches: -avzr --delete
-          path: /
-          remote_path: /home/instudio/html/dev/arandor-app
-          remote_host: vanness.uberspace.de
-          remote_user: instudio
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to Uberspace
+        run: |
+          SSH_USER="instudio"
+          SSH_HOST="vanness.uberspace.de"
+          SUBFOLDER="/home/instudio/html/dev/arandor-app"
+          
+          # Deploy using rsync
+          rsync -avz --delete --exclude='.git/' --exclude='.github/' --exclude='node_modules/' ./ $SSH_USER@$SSH_HOST:$SUBFOLDER
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
