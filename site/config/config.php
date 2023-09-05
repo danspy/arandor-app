@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'panel' =>[
+        'install' => true
+    ],
     'owebstudio.pwa' => [
         'enable' => true,
         'manifest' => [
