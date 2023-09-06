@@ -49,6 +49,7 @@ Icon
 
 /site/config/.license
 
+/content
 /kirby
 /vendor
 deploy.sh

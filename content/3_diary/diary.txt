@@ -1,9 +1,0 @@
-Title: Diary
-
-----
-
-Text: Das Abenteuer-Tagebuch ...
-
-----
-
-Uuid: Ynl6RJwCcojNT9ic
