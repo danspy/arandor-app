@@ -1,10 +1,14 @@
 # Arandor Companion App
 
 ## Stack
-- [Kirby CMS](https://getkirby.com)
-- [Vite JS](https://vitejs.dev)
-- [Alpine JS](https://alpinejs.dev)
-- [Tailwind CSS](https://tailwindcss.com)
+| Package | Version |
+|----------|:-------------:|
+| php | 8.2.9 |
+| node | latest |
+| [Kirby CMS](https://getkirby.com) | 3.9.6.1 |
+| [Vite JS](https://vitejs.dev) | 4.3.2 |
+| [Alpine JS](https://alpinejs.dev) | 3.12.3 |
+| [Tailwind CSS](https://tailwindcss.com) | 3.3.3 |
 
 ## Install
 
