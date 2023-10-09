@@ -15,7 +15,7 @@
         </div>
         
         <div class="flex items-center justify-center col-span-2 p-3">
-          <h1 class="text-[28px] font-cormorant lg:text-[38px]"><?= $page->title() ?></h1>
+          <h1 class="text-[28px] leading-[1.1] font-cormorant lg:text-[38px]"><?= $page->title() ?></h1>
         </div>
 
         <?php if($image = $page->image()) { ?>
@@ -24,7 +24,7 @@
       </div>
     <?php } else { ?>
       <div class="w-full px-6 lg:max-w-[900px] py-6 lg:py-12 lg:pl-12 lg:pr-12 lg:mx-auto">
-        <h1 class="text-[28px] font-cormorant lg:text-[38px]"><?= $page->title() ?></h1>
+        <h1 class="text-[28px] leading-[1.1] font-cormorant lg:text-[38px]"><?= $page->title() ?></h1>
       </div>
     <?php } ?>
 
