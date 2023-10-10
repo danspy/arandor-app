@@ -15,7 +15,13 @@ columns:
     sections:
       pages:
         type: pages
-        template: default
+        template: subpage
       files:
         type: files
+      fields:    # Add a "fields" section within the "sidebar" section
+        type: fields
+        fields:
+          subpage_drawer_name:
+            label: Subpages Title  # Customize the label as needed
+            type: text
 
