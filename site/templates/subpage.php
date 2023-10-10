@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <?php snippet('menu') ?>
 
-<div class="relative flex flex-col w-full lg:flex-row" >
+<div class="relative flex flex-col w-full lg:flex-row lg:h-screen" >
   <?php if ($page->hasSiblings() && count($page->siblings()) > 1) { ?>
     <?php $parentPage = $page->parent(); if ($parentPage) { $parentTitle = $parentPage->title(); ?>
       <?php snippet('sidemenu', ['submenuTitle' => $parentTitle]) ?>
