@@ -44,7 +44,7 @@ if ($parentPage) {
                 <p class="p-3">Loading Avatar ...</p>
               </template>
               <template x-if="!loading">
-                <img class="w-full" x-bind:src="character.data.decorations.avatarUrl" alt="">
+                <img class="object-cover w-full h-full" x-bind:src="character.data.decorations.avatarUrl" alt="">
               </template>
             </div>
 

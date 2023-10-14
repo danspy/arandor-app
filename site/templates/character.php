@@ -15,7 +15,7 @@
         <template x-if="!loading && character">
           <div class="relative z-0 grid w-full grid-cols-3 p-3 mx-auto bg-black md:mb-12 lg:p-12 overflow-clip">
             <div class="flex items-center shadow-lg aspect-square overflow-clip bg-gray-950">
-              <img class="w-full" x-bind:src="character.data.decorations.avatarUrl" alt="">
+              <img class="object-cover w-full h-full" x-bind:src="character.data.decorations.avatarUrl" alt="">
             </div>
             
             <div class="flex items-center justify-center col-span-2 p-3">

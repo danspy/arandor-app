@@ -625,6 +625,9 @@ video {
 .h-\[200px\]{
   height: 200px;
 }
+.h-full{
+  height: 100%;
+}
 .max-h-\[300px\]{
   max-height: 300px;
 }
@@ -777,6 +780,14 @@ video {
 }
 .bg-center{
   background-position: center;
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-1{
   padding: 0.25rem;
