@@ -6,12 +6,12 @@ if ($parentPage) {
 
     foreach ($subpages as $subpage) { ?>
 
-<a href="<?= $subpage->url() ?>" class="relative bg-black aspect-square">
+<a href="<?= $subpage->url() ?>" class="relative group bg-black aspect-square [&>div>img]:hover:scale-[1.1] [&>div>img]:hover:blur-sm">
   <?php if($subpage->images()->isNotEmpty()): ?>
     <?php foreach($subpage->images() as $file): ?>
-      <span class="block opacity-20">
-        <?= $file->crop(800) ?>
-      </span>
+      <div class="flex items-center justify-center aspect-square overflow-clip opacity-20">
+        <img class="object-cover w-full h-full transition-all duration-300 ease-in-out" src="<?= $file->url() ?>" alt="">
+      </div>
     <?php endforeach ?>
   <?php endif ?>
 
