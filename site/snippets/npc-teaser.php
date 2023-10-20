@@ -6,7 +6,7 @@ if ($parentPage) {
 
     foreach ($subpages as $subpage) { ?>
 
-<a href="<?= $subpage->url() ?>" class="relative group bg-black aspect-square [&>div>img]:hover:scale-[1.1] [&>div>img]:hover:blur-md [&>div>img]:hover:opacity-60">
+<a href="<?= $subpage->url() ?>" class="relative group bg-black aspect-square 2xl:[&>div>img]:hover:scale-[1.1] 2xl:[&>div>img]:hover:blur-md 2xl:[&>div>img]:hover:opacity-60">
       <?php if($subpage->images()->isNotEmpty()) { ?>
         <?php foreach($subpage->images() as $file): ?>
           <div class="relative z-0 flex items-center justify-center aspect-square overflow-clip">
@@ -18,7 +18,7 @@ if ($parentPage) {
       
       
       <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-opacity-60 bg-gradient-to-t from-black to-transparent">
-        <div class="absolute transition-all duration-300 ease-in-out group-hover:translate-y-1/2 left-3 right-3 bottom-3 group-hover:bottom-full">
+        <div class="absolute transition-all duration-300 ease-in-out 2xl:group-hover:translate-y-1/2 left-3 right-3 bottom-3 2xl:group-hover:bottom-full">
           <h3 class="leading-0 text-[18px] text-center"><?= $subpage->title()->html() ?></h3>
         </div>
       </div>

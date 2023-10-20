@@ -6,7 +6,7 @@ if ($parentPage) {
 
     foreach ($subpages as $subpage) { ?>
 
-<a href="<?= $subpage->url() ?>" class="relative group bg-black aspect-square [&>div>img]:hover:scale-[1.1] [&>div>img]:hover:blur-md [&>div>img]:hover:opacity-60"
+<a href="<?= $subpage->url() ?>" class="relative group bg-black aspect-square 2xl:[&>div>img]:hover:scale-[1.1] 2xl:[&>div>img]:hover:blur-md 2xl:[&>div>img]:hover:opacity-60"
         x-data="{
           characterId: '<?= $subpage->characterid() ?>',
           character: {},
@@ -55,12 +55,12 @@ if ($parentPage) {
           <?php } ?>
 
           <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-opacity-60 bg-gradient-to-t from-black to-transparent">
-            <div class="absolute transition-all duration-300 ease-in-out translate-y-1/2 left-3 right-3 bottom-3 group-hover:bottom-full">
+            <div class="absolute transition-all duration-300 ease-in-out translate-y-1/2 left-3 right-3 bottom-3 2xl:group-hover:bottom-full">
               <h3 class="leading-0 text-[18px] text-center"><?= $subpage->title()->html() ?></h3>
               <?php if($subpage->characterid() != ''): ?>
                 <span class="flex justify-center">
-                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-60 block mt-1 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
-                  <span x-show="character.data.classes[0].definition.name" class="transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-60 block ml-2 mt-1 text-[14px]" x-text="character.data.classes[0].definition.name"></span>
+                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
+                  <span x-show="character.data.classes[0].definition.name" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block ml-2 mt-1 text-[14px]" x-text="character.data.classes[0].definition.name"></span>
                 </span>
               <?php endif ?>
             </div>
