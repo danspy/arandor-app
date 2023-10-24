@@ -39,7 +39,7 @@ if ($parentPage) {
         }" x-init="init">
           <?php if($subpage->characterid() != '') { ?>
 
-            <div class="flex items-center justify-center aspect-square overflow-clip">
+            <div class="flex items-center justify-center aspect-square overflow-clip status-<?= $subpage->active() ?>">
               <template x-if="loading">
                 <p class="p-3">Loading Avatar ...</p>
               </template>
@@ -59,7 +59,10 @@ if ($parentPage) {
               <h3 class="leading-0 text-[18px] text-center"><?= $subpage->title()->html() ?></h3>
               <?php if($subpage->characterid() != ''): ?>
                 <span class="flex justify-center">
-                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
+                  <?php if($subpage->active() == 'false'): ?>
+                  <span class="transition-opacity block duration-300 uppercase ease-in-out opacity-0 2xl:group-hover:opacity-60 mt-1 text-[14px]">Inactive</span>
+                  <?php endif ?>
+                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 ml-2 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
                   <span x-show="character.data.classes[0].definition.name" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block ml-2 mt-1 text-[14px]" x-text="character.data.classes[0].definition.name"></span>
                 </span>
               <?php endif ?>

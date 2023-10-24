@@ -13,6 +13,10 @@ columns:
           characterId:
             label: Character ID
             type: text
+          active:
+            label: Character status
+            type: toggle
+            default: true
   sidebar:
     width: 1/3
     sections:

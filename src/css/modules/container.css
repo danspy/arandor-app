@@ -36,3 +36,7 @@
     @apply text-green-600;
   }
 }
+
+.status-false {
+  @apply [&>img]:grayscale opacity-50;
+}

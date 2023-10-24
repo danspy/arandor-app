@@ -7,7 +7,10 @@
     <h1 class="text-[28px] md:text-[38px] leading-6">
       <span class="block font-cormorant" x-text="character.data.name"></span>
       <span class="flex">
-        <span x-show="character.data.classes[0].level" class="block mt-1 md:mt-4 text-[14px] md:text-[21px] opacity-60" x-text="'Level ' + character.data.classes[0].level"></span>
+        <?php if($page->active() == 'false'): ?>
+        <span class="block mt-1 md:mt-4 text-[14px] uppercase md:text-[21px] opacity-60">Inactive</span>
+        <?php endif ?>
+        <span x-show="character.data.classes[0].level" class="block mt-1 ml-2 md:mt-4 text-[14px] md:text-[21px] opacity-60" x-text="'Level ' + character.data.classes[0].level"></span>
         <span x-show="character.data.classes[0].definition.name" class="block ml-2 mt-1 md:mt-4 text-[14px] md:text-[21px] opacity-60" x-text="character.data.classes[0].definition.name"></span>
       </span>
     </h1>
