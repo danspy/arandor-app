@@ -14,7 +14,7 @@ if($items and $items->isNotEmpty()):
 ?>
 <!-- DESKTOP -->
 <div class="sidebar w-full lg:h-screen lg:w-[300px] bg-black flex-grow py-4 sticky top-20 lg:top-0 hidden lg:block">
-  <nav class="lg:sticky lg:top-24 lg:block">
+  <nav class="overflow-scroll lg:sticky lg:top-24 lg:block lg:h-full">
     <ul>
       <?php foreach($items as $item): ?>
       <li>
