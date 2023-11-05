@@ -60,10 +60,10 @@ if ($parentPage) {
               <?php if($subpage->characterid() != ''): ?>
                 <span class="flex justify-center">
                   <?php if($subpage->active() == 'false'): ?>
-                  <span class="transition-opacity block duration-300 uppercase ease-in-out opacity-0 2xl:group-hover:opacity-60 mt-1 text-[14px]">Inactive</span>
+                  <span class="transition-opacity block duration-300 uppercase ease-in-out opacity-0 2xl:group-hover:opacity-60 mt-1 mr-2 text-[14px]">Inactive</span>
                   <?php endif ?>
-                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 ml-2 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
-                  <span x-show="character.data.classes[0].definition.name" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block ml-2 mt-1 text-[14px]" x-text="character.data.classes[0].definition.name"></span>
+                  <span x-show="character.data.classes[0].level" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 mr-2 text-[14px]" x-text="'Level ' + character.data.classes[0].level"></span>
+                  <span x-show="character.data.classes[0].definition.name" class="transition-opacity duration-300 ease-in-out opacity-0 2xl:group-hover:opacity-60 block mt-1 text-[14px]" x-text="character.data.classes[0].definition.name"></span>
                 </span>
               <?php endif ?>
             </div>
