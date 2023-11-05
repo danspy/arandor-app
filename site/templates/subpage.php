@@ -12,7 +12,7 @@
 
     <?php snippet('hero') ?>
 
-    <div class="w-full px-6 lg:max-w-[900px] lg:pb-12 lg:pl-12 lg:pr-12 lg:mx-auto">
+    <div class="w-full px-6 lg:max-w-[900px] lg:pb-12 lg:pl-12 lg:pr-12 lg:mx-auto content">
 
       <div class="pb-12 mt-12 mb-12 border-b-2 border-b-black">
         <h2 class="text-[38px] font-cormorant leading-10">

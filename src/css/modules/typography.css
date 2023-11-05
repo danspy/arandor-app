@@ -1,3 +1,53 @@
-p + p {
+p + p, ul + p, p + ul {
   @apply mt-4;
+}
+
+h1, h2, h3 {
+  @apply font-cormorant leading-10;
+}
+
+h1 + p,
+p + h1,
+h2 + p,
+p + h2,
+h3 + p,
+p + h3,
+h1 + ul,
+ul + h1,
+h2 + ul,
+ul + h2,
+h3 + ul,
+ul + h3 {
+  @apply mt-6;
+}
+
+h1 {
+  @apply text-[45px];
+}
+
+h2 {
+  @apply text-[38px];
+}
+
+h3 {
+  @apply text-[32px];
+}
+
+.content ul {
+  @apply pl-6;
+}
+
+.content ul li {
+  @apply relative before:content-[''] before:absolute before:h-[2px] before:w-4 before:bg-yellow-500 before:-left-6 before:top-3;
+}
+.content li + li {
+  @apply mt-3;
+}
+
+.content strong {
+  @apply font-bold;
+}
+
+.content em {
+  @apply italic;
 }
