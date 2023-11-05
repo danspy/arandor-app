@@ -13,8 +13,8 @@ if($items and $items->isNotEmpty()):
 
 ?>
 <!-- DESKTOP -->
-<div class="sidebar w-full lg:h-screen lg:w-[300px] bg-black flex-grow py-4 sticky top-20 lg:top-0 hidden lg:block">
-  <nav class="overflow-scroll lg:sticky lg:top-24 lg:block lg:h-full">
+<div class="sidebar w-full lg:min-h-screen lg:w-[300px] bg-black flex-grow py-4 sticky top-20 lg:top-0 hidden lg:block">
+  <nav class="lg:sticky lg:top-24">
     <ul>
       <?php foreach($items as $item): ?>
       <li>
