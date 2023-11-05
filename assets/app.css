@@ -1148,10 +1148,10 @@ video {
     width: 30vw;
   }
 }
-p + p, ul + p, p + ul{
+p + p, ul + p, p + ul, ol + p, p + ol, ul + ol, ol + ul{
   margin-top: 1rem;
 }
-h1, h2, h3{
+.content h1, .content h2, .content h3{
   font-family: Cormorant Unicase, serif;
   line-height: 2.5rem;
 }
@@ -1166,25 +1166,31 @@ ul + h1,
 h2 + ul,
 ul + h2,
 h3 + ul,
-ul + h3{
+ul + h3,
+h1 + ol,
+ol + h1,
+h2 + ol,
+ol + h2,
+h3 + ol,
+ol + h3{
   margin-top: 1.5rem;
 }
-h1{
+.content h1{
   font-size: 45px;
 }
-h2{
+.content h2{
   font-size: 38px;
 }
-h3{
+.content h3{
   font-size: 32px;
 }
-.content ul{
+.content ul, .content ol{
   padding-left: 1.5rem;
 }
-.content ul li{
+.content ul li, .content ol li{
   position: relative;
 }
-.content ul li::before{
+.content ul li::before, .content ol li::before{
   position: absolute;
   left: -1.5rem;
   top: 0.75rem;

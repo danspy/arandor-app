@@ -1,8 +1,8 @@
-p + p, ul + p, p + ul {
+p + p, ul + p, p + ul, ol + p, p + ol, ul + ol, ol + ul {
   @apply mt-4;
 }
 
-h1, h2, h3 {
+.content h1, .content h2, .content h3 {
   @apply font-cormorant leading-10;
 }
 
@@ -17,27 +17,33 @@ ul + h1,
 h2 + ul,
 ul + h2,
 h3 + ul,
-ul + h3 {
+ul + h3,
+h1 + ol,
+ol + h1,
+h2 + ol,
+ol + h2,
+h3 + ol,
+ol + h3 {
   @apply mt-6;
 }
 
-h1 {
+.content h1 {
   @apply text-[45px];
 }
 
-h2 {
+.content h2 {
   @apply text-[38px];
 }
 
-h3 {
+.content h3 {
   @apply text-[32px];
 }
 
-.content ul {
+.content ul, .content ol {
   @apply pl-6;
 }
 
-.content ul li {
+.content ul li, .content ol li {
   @apply relative before:content-[''] before:absolute before:h-[2px] before:w-4 before:bg-yellow-500 before:-left-6 before:top-3;
 }
 .content li + li {
