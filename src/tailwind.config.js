@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  important: true,
   content: [
     '../kirby/**/*.{php,html,js}',
     '../site/**/*.{php,html,js}',
