@@ -1,0 +1,8 @@
+type: pages
+label: Episodes
+parent: kirby.page("diary")
+size: medium
+info: "{{ page.date.toDate('d.m.Y') }}"
+layout: cards
+template: diary-page
+empty: No entries yet
