@@ -37,7 +37,7 @@
         <div class="p-6 mt-12 bg-slate-900">
           <h2 class="text-2xl font-cormorant">Community Notes:</h2>
           <div class="mt-3">
-            <?= $page->community() ?>
+            <?= $page->community()->kirbytext() ?>
           </div>
         </div>
       <?php } ?>
