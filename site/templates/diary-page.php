@@ -33,6 +33,15 @@
     <div class="w-full px-6 pb-12 lg:max-w-[900px] lg:pl-12 lg:pr-12 lg:mx-auto">
       <?= $page->text()->kirbytext() ?>
 
+      <?php if($page->community() != '') { ?>
+        <div class="p-6 mt-12 bg-slate-900">
+          <h2 class="text-2xl font-cormorant">Community Notes:</h2>
+          <div class="mt-3">
+            <?= $page->community() ?>
+          </div>
+        </div>
+      <?php } ?>
+
       <div>
         <?php snippet('pagination') ?>
       </div>

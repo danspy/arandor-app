@@ -13,6 +13,9 @@ columns:
           text:
             type: textarea
             size: huge
+          community:
+            label: Community Notes
+            type: textarea
   sidebar:
     width: 1/3
     sections:
