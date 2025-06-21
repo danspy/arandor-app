@@ -606,14 +606,14 @@ video {
 .mt-12{
   margin-top: 3rem !important;
 }
+.mt-3{
+  margin-top: 0.75rem !important;
+}
 .mt-4{
   margin-top: 1rem !important;
 }
 .mt-6{
   margin-top: 1.5rem !important;
-}
-.mt-3{
-  margin-top: 0.75rem !important;
 }
 .block{
   display: block !important;
@@ -921,6 +921,10 @@ video {
 .font-lustria{
   font-family: Lustria, serif !important;
 }
+.text-2xl{
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
 .text-\[14px\]{
   font-size: 14px !important;
 }
@@ -944,10 +948,6 @@ video {
 }
 .text-\[38px\]{
   font-size: 38px !important;
-}
-.text-2xl{
-  font-size: 1.5rem !important;
-  line-height: 2rem !important;
 }
 .uppercase{
   text-transform: uppercase !important;

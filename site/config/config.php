@@ -1,9 +1,52 @@
 <?php
 
 return [
-    //'debug'  => true,
+    'debug'  => true,
     'panel' =>[
         'install' => true
+    ],
+    'routes' => [
+        // Example: Get a single page
+        [
+            'pattern' => 'arandor-api/pages/(:all)',
+            'method'  => 'GET',
+            'action'  => function ($path) {
+                $page = page($path);
+                if (!$page) return ['status' => 404, 'message' => 'Not found'];
+        
+                $data = $page->content()->toArray();
+        
+                // Optional: Add structure field parsing
+                if ($page->slider()->isNotEmpty()) {
+                    $data['slider'] = $page->slider()->toStructure()->map(fn ($item) => $item->toArray())->values();
+                }
+        
+                return [
+                    'status' => 200,
+                    'data'   => $data
+                ];
+            }
+        ],
+  
+        // Example: List children of a page
+        [
+            'pattern' => 'arandor-api/children/(:all)',
+            'method'  => 'GET',
+            'action'  => function ($path) {
+                $page = page($path);
+                if (!$page) return ['status' => 404, 'message' => 'Not found'];
+        
+                return [
+                    'status' => 200,
+                    'data' => $page->children()->listed()->map(fn ($child) => [
+                    'slug'  => $child->slug(),
+                    'title' => $child->title()->value(),
+                    'url'   => $child->url(),
+                    'content' => $child->content()->toArray(),
+                    ])->values()
+                ];
+            }
+        ],
     ],
     'owebstudio.pwa' => [
         'enable' => true,
