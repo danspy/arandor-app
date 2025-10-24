@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  characterId?: string;
+}
+
+const { title, characterId } = Astro.props;
+const siteTitle = "Arandor Compendium";
+---
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} | {siteTitle}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Arandor ist ein D&D 5E Abenteuer. Geschrieben von Flo. Gespielt von Daniel, Cons und David." />
+  </head>
+  
+  {characterId ? (
+    <body
+      x-data={`{
+        characterId: '${characterId}',
+        character: {},
+        loading: true,
+        expiration: 600000,
+        async init() {
+          try {
+            const localStorageData = localStorage.getItem('characterData${characterId}');
+            const expiration = localStorage.getItem('characterDataExpiration${characterId}');
+
+            if (localStorageData && expiration && Date.now() < Number(expiration)) {
+              this.character = JSON.parse(localStorageData);
+              this.loading = false;
+            } else {
+              const proxyUrl = '/api/character?characterId=' + this.characterId;
+              const response = await fetch(proxyUrl);
+              const data = await response.json();
+              this.character = data;
+              this.loading = false;
+
+              console.log(this.character);
+
+              const expirationTime = Date.now() + this.expiration;
+              localStorage.setItem('characterData${characterId}', JSON.stringify(data));
+              localStorage.setItem('characterDataExpiration${characterId}', expirationTime);
+            }
+          } catch (error) {
+            console.error('Error fetching data:', error);
+            this.loading = false;
+          }
+        }
+      }`}
+      x-init="init"
+    >
+      <slot />
+    </body>
+  ) : (
+    <body>
+      <slot />
+    </body>
+  )}
+</html>

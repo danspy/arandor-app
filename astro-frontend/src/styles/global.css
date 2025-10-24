@@ -1,0 +1,175 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Lustria&display=swap');
+
+/* Base styles */
+:root {
+  @apply font-lustria;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.character-hero {
+  filter: blur(20px);
+}
+
+.accordion-item + .accordion-item {
+  @apply mt-3;
+}
+
+.status {
+  &.clipboard-list {
+    @apply text-slate-500;
+  }
+  &.timer {
+    @apply text-yellow-500;
+  }
+  &.calendar-clock {
+    @apply text-blue-400;
+  }
+  &.check-circle-2 {
+    @apply text-green-600;
+  }
+}
+
+.status-false {
+  @apply [&>img]:grayscale opacity-50;
+}
+
+/* Typography */
+p + p, ul + p, p + ul, ol + p, p + ol, ul + ol, ol + ul {
+  @apply mt-4;
+}
+
+.content h1, .content h2, .content h3 {
+  @apply font-cormorant leading-10;
+}
+
+h1 + p,
+p + h1,
+h2 + p,
+p + h2,
+h3 + p,
+p + h3,
+h1 + ul,
+ul + h1,
+h2 + ul,
+ul + h2,
+h3 + ul,
+ul + h3,
+h1 + ol,
+ol + h1,
+h2 + ol,
+ol + h2,
+h3 + ol,
+ol + h3 {
+  @apply mt-6;
+}
+
+.content h1 {
+  @apply text-[45px];
+}
+
+.content h2 {
+  @apply text-[38px];
+}
+
+.content h3 {
+  @apply text-[32px];
+}
+
+.content ul, .content ol {
+  @apply pl-6;
+}
+
+.content ul li, .content ol li {
+  @apply relative before:content-[''] before:absolute before:h-[2px] before:w-4 before:bg-yellow-500 before:-left-6 before:top-3;
+}
+.content li + li {
+  @apply mt-3;
+}
+
+.content strong {
+  @apply font-bold;
+}
+
+.content em {
+  @apply italic;
+}
+
+/* Menu */
+.menu {
+  a.active {
+    @apply h-20 bg-gray-900;
+  }
+
+  a {
+    @apply h-20 px-3 hover:bg-yellow-400 hover:text-black transition-all duration-300 ease-in-out flex items-center justify-center;
+  }
+}
+
+.mobile-menu {
+  a.active {
+    @apply bg-gray-900 h-auto;
+  }
+
+  a {
+    @apply h-auto py-2 px-6 block hover:bg-yellow-400 hover:text-black transition-all duration-300 ease-in-out;
+  }
+}
+
+.sidebar {
+  a.active {
+    @apply bg-gray-900;
+  }
+
+  a {
+    @apply py-2 px-6 block hover:bg-yellow-400 hover:text-black transition-all duration-300 ease-in-out;
+  }
+}
+
+.sidebar-flyout {
+    @apply fixed w-screen md:w-[50vw] lg:w-[30vw] right-0 top-0 h-screen;
+}
+
+/* Progress bars for dashboard */
+#progressLevel {
+  &::-webkit-progress-bar {
+    background-color: #101010;
+  }
+  &::-webkit-progress-value {
+    @apply bg-yellow-500;
+  }
+
+  &.enemy::-webkit-progress-value {
+    @apply bg-red-900;
+  }
+  &.suspicious::-webkit-progress-value {
+    @apply bg-red-500;
+  }
+  &.neutral::-webkit-progress-value {
+    @apply bg-yellow-600;
+  }
+  &.friendly::-webkit-progress-value {
+    @apply bg-green-600;
+  }
+  &.respectful::-webkit-progress-value {
+    @apply bg-blue-700;
+  }
+
+  &::-moz-progress-bar {
+    @apply bg-yellow-500;
+  }
+}

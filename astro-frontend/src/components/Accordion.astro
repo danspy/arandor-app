@@ -1,0 +1,41 @@
+---
+export interface AccordionItem {
+  title: string;
+  questcontent: string;
+  queststatusselect: string;
+}
+
+interface Props {
+  items: AccordionItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div x-data="{ openItem: null }">
+  {items.map((item, index) => (
+    <div class="accordion-item">
+      <button
+        @click={`openItem = openItem === ${index} ? null : ${index}`}
+        class="flex items-start justify-between w-full px-6 py-4 text-left bg-slate-900 hover:bg-slate-800"
+      >
+        <span class="flex items-center">
+          <i class={`mr-3 status ${item.queststatusselect}`} data-lucide={item.queststatusselect}></i>
+          <span>{item.title}</span>
+        </span>
+        <i
+          data-lucide="chevron-down"
+          x-bind:class={`openItem === ${index} ? 'rotate-180' : ''`}
+          class="transition-transform duration-200"
+        ></i>
+      </button>
+      <div
+        x-show={`openItem === ${index}`}
+        x-transition
+        class="px-6 py-4 bg-slate-950"
+      >
+        <p>{item.questcontent}</p>
+      </div>
+    </div>
+  ))}
+</div>

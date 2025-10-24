@@ -1,0 +1,78 @@
+---
+const menuItems = [
+  { title: 'Home', url: '/', slug: 'home' },
+  { title: 'Characters', url: '/characters', slug: 'characters' },
+  { title: 'NPCs', url: '/npcs', slug: 'npcs' },
+  { title: 'Tagebuch', url: '/diary', slug: 'diary' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<div class="sticky top-0 z-10 flex flex-row items-center justify-between h-20 gap-4 bg-black">
+  <a class="block ml-6 md:ml-8 logo" href="/">
+    <div class="text-yellow-500 font-cormorant text-[38px] hover:scale-[1.05] transition-all duration-300 ease-in-out hover:drop-shadow-[0_-4px_10px_rgba(234,179,8,1)]">
+      Arandor
+    </div>
+  </a>
+  
+  <nav class="menu">
+    <ul class="flex-row hidden mr-6 md:mr-8 lg:flex">
+      {menuItems.map((item) => (
+        <li>
+          <a 
+            href={item.url} 
+            class:list={[currentPath === item.url && 'active']}
+          >
+            {item.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+    
+    <!-- Mobile Menu -->
+    <div x-data="{ openMobileMenu: false }" class="mr-6 md:mr-8 lg:hidden">
+      <button @click="openMobileMenu = true" class="flex flex-row items-center gap-2 text-white">
+        <i data-lucide="menu"></i>
+      </button>
+      
+      <div 
+        x-show="openMobileMenu" 
+        x-transition:enter="transition-transform transition-duration-300 ease-out"
+        x-transition:leave="transition-transform transition-duration-300 ease-in"
+        x-transition:enter-start="translate-x-full" 
+        x-transition:enter-end="translate-x-0"
+        x-transition:leave-start="translate-x-0" 
+        x-transition:leave-end="translate-x-full"
+        class="fixed inset-0 z-20 overflow-y-auto"
+      >
+        <div @click.away="openMobileMenu = false" class="text-white bg-black sidebar-flyout">
+          <header class="px-6 border-b-2 shadow-light border-b-slate-900">
+            <button @click="openMobileMenu = false" class="flex flex-row items-center h-20">
+              <span class="inline-flex items-center">
+                <i class="mr-2" data-lucide="chevron-left"></i> Schließen
+              </span>
+            </button>
+          </header>
+
+          <nav class="pb-6 mobile-menu">
+            <ul>
+              {menuItems.map((item) => (
+                <li>
+                  <a 
+                    href={item.url}
+                    class:list={[currentPath === item.url && 'active']}
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div x-show="openMobileMenu" class="fixed inset-0 z-10 overflow-y-auto bg-opacity-60 bg-petrol-dark"></div>
+    </div>
+  </nav>
+</div>
